@@ -47,12 +47,92 @@
     color: rgb(189, 61, 61);
 }
 #projects-section {
-    height: 100vh;
+    height: 165vh;
+    background-color: rgb(74, 74, 124);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#projects-section h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    padding-bottom: 80px;
+    /* padding-left: 130px;
+    padding-right: 130px; */
+}
+#projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* .project-tile {
+    height: 200px;
+    width: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+} */
+.project-tile a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.cardContainer {
+    height: 400px;
+    width: 350px;
+}
+.cardContainer img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.cardContainer p {
+    background-color: rgb(59, 61, 74);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(59, 61, 74);
+    height: 50px;
+    width: 120px;
+    color: white;
+}
+button:hover {
+    background-color: rgb(189, 61, 61);
+}
+#btnContainer {
+    display: flex;
+    justify-content: center;
+
 }
 #contacts-section {
     height: 100vh;
-
+    background-color: rgb(60, 63, 80);
+}
+#footer {
+    text-align: center;
 }
 @media screen and (max-width: 490px) and (max-height: 380px) {
-    
+    #navbar a {
+        size: .5rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    /* need somehting for main heading when it shrinks down to this size */
+}
+@media screen and (max-width: 750px) {
+    /* projects show 1 column */
+    #projectGrid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 500px) and (max-height: 718px) {
+    #projects-section h1 {
+        padding-top: 130px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
