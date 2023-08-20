@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: rgb(189, 61, 61);
+    height: 69px;
+}
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+} 
+#header {
+
+}
+#head {
+    color: white;
+}
+#webDev {
+    color: rgb(189, 61, 61);
+}
+#projects-section {
+    height: 100vh;
+}
+#contacts-section {
+    height: 100vh;
+
+}
